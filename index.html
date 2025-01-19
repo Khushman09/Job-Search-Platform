@@ -1,0 +1,36 @@
+<!-- User can click on the task to cross it off when its done-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <select id="categoryInput">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div class="filters">
+            <button class="filterBtn" data-filter="all">All</button>
+            <button class="filterBtn" data-filter="Work">Work</button>
+            <button class="filterBtn" data-filter="Personal">Personal</button>
+            <button class="filterBtn" data-filter="Urgent">Urgent</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div id="progressBar"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
